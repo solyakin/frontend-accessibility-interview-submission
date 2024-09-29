@@ -1,0 +1,38 @@
+.App-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-right: auto; /* Pushes the nav to the center */
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust size as needed */
+  }
+  
+  .nav-container {
+    flex: 1; /* Allows nav to take up available space */
+    text-align: center; /* Centers the navigation */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center; /* Centers nav items */
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
