@@ -1,11 +1,10 @@
 import React from 'react';
-import './DogCard.css'; 
+import './DogCard.css';
 
 interface DogCardProps {
   id: number; // Add id prop
   name: string;
   age: number;
-  picture: string;
   height: string;
   color: string;
   favoritePortFeature: string;
@@ -13,28 +12,50 @@ interface DogCardProps {
 }
 
 const DogCard: React.FC<DogCardProps> = ({ 
-    id, // Include the id prop
+    id, 
     name, 
     age, 
-    picture, 
     height, 
     color, 
     favoritePortFeature, 
     favoriteMeal 
-  }) => {
-    return (
-      <div className="dog-card" key={id}> {/* Optionally add id here for styling or functionality */}
-        <img src={picture} alt={name} className="dog-image" />
-        <h3>{name}</h3>
-        <p>ID: {id}</p>
-        <p>Age: {age} years</p>
-        <p>Height: {height}</p>
-        <p>Color: {color}</p>
-        <p>Favorite Port Feature: {favoritePortFeature}</p>
-        <p>Favorite Meal: {favoriteMeal}</p>
+}) => {
+  return (
+    <div className="dog-card" key={id}>
+      <img 
+        src={`https://placedog.net/400/400/random?id=${id}`} 
+        alt={name} 
+        className="dog-image" 
+      />
+      <h3>{name}</h3>
+      <div>
+        <div className="category">
+          <p className="category-label">ID:</p>
+          <p className="category-value">{id}</p>
+        </div>
+        <div className="category">
+          <p className="category-label">Age:</p>
+          <p className="category-value">{age} years</p>
+        </div>
+        <div className="category">
+          <p className="category-label">Height:</p>
+          <p className="category-value">{height}</p>
+        </div>
+        <div className="category">
+          <p className="category-label">Color:</p>
+          <p className="category-value">{color}</p>
+        </div>
+        <div className="category">
+          <p className="category-label">Favorite Feature:</p>
+          <p className="category-value">{favoritePortFeature}</p>
+        </div>
+        <div className="category">
+          <p className="category-label">Favorite Meal:</p>
+          <p className="category-value">{favoriteMeal}</p>
+        </div>
       </div>
-    );
-  };
-  
+    </div>
+  );
+};
 
 export default DogCard;

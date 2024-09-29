@@ -19,9 +19,7 @@ const Manage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here, you would typically send the data to the server or state management
     console.log('New Dog Added:', dogData);
-    // Reset form after submission
     setDogData({
       name: '',
       age: '',
@@ -44,10 +42,6 @@ const Manage = () => {
         <div className="form-group">
           <label htmlFor="age">Age:</label>
           <input type="number" name="age" value={dogData.age} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="picture">Picture URL:</label>
-          <input type="text" name="picture" value={dogData.picture} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="height">Height:</label>

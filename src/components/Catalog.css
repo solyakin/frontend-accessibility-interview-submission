@@ -2,7 +2,8 @@
 .catalog {
     padding: 20px;
     text-align: center; /* Center the title */
-  }
+    flex-grow: 1;
+}
   
   .dog-cards-container {
     display: grid; /* Use grid layout for cards */

@@ -1,12 +1,18 @@
-/* App.css */
+html, body {
+  height: 100%; /* Set the height of the html and body to 100% */
+  margin: 0; /* Remove default margins */
+}
+
 .App {
-    background-color: #fff4e4; /* Set the background color */
-    min-height: 100vh; /* Ensure it takes full height */
-    display: flex; /* Use flex to layout content */
-    flex-direction: column; /* Stack children vertically */
-  }
-  
-  main {
-    flex-grow: 1; /* Allow main to take up available space */
-  }
-  
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 100vh; /* Minimum height of the viewport */
+  background-color: #fff4e4; /* Set the background color */
+}
+
+.main-content {
+  flex: 1; /* This will make the main content take the remaining space */
+  padding: 20px; /* Padding for the main content */
+  background-color: #fff4e4; /* Background color for the main content */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}

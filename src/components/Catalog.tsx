@@ -7,7 +7,7 @@ const dogs = [
       id: 1, // Unique numeric ID
       name: 'Buddy',
       age: 3,
-      picture: 'path/to/buddy.jpg', // Replace with actual image paths
+      picture: 'https://http.dog/200.jpg', // Replace with actual image paths
       height: '24 inches',
       color: 'Golden',
       favoritePortFeature: 'Fetching Ball',
@@ -17,7 +17,7 @@ const dogs = [
       id: 2, // Unique numeric ID
       name: 'Bella',
       age: 2,
-      picture: 'path/to/bella.jpg',
+      picture: 'https://http.dog/204.jpg',
       height: '22 inches',
       color: 'Brown',
       favoritePortFeature: 'Jumping',
@@ -27,7 +27,7 @@ const dogs = [
       id: 3, // Unique numeric ID
       name: 'Charlie',
       age: 4,
-      picture: 'path/to/charlie.jpg',
+      picture: 'https://http.dog/203.jpg',
       height: '26 inches',
       color: 'Black',
       favoritePortFeature: 'Chasing Frisbees',
@@ -37,7 +37,7 @@ const dogs = [
       id: 4, // Unique numeric ID
       name: 'Daisy',
       age: 1,
-      picture: 'path/to/daisy.jpg',
+      picture: 'https://http.dog/599.jpg',
       height: '20 inches',
       color: 'White',
       favoritePortFeature: 'Digging',
@@ -47,7 +47,7 @@ const dogs = [
       id: 5, // Unique numeric ID
       name: 'Max',
       age: 5,
-      picture: 'path/to/max.jpg',
+      picture: 'https://http.dog/530.jpg',
       height: '30 inches',
       color: 'Sable',
       favoritePortFeature: 'Swimming',
@@ -57,7 +57,7 @@ const dogs = [
       id: 6, // Unique numeric ID
       name: 'Luna',
       age: 3,
-      picture: 'path/to/luna.jpg',
+      picture: 'https://http.dog/496.jpg',
       height: '22 inches',
       color: 'Brindle',
       favoritePortFeature: 'Barking at Birds',
@@ -67,7 +67,7 @@ const dogs = [
       id: 7, // Unique numeric ID
       name: 'Rocky',
       age: 6,
-      picture: 'path/to/rocky.jpg',
+      picture: 'https://http.dog/561.jpg',
       height: '28 inches',
       color: 'Fawn',
       favoritePortFeature: 'Running',
@@ -76,7 +76,7 @@ const dogs = [
 ];
   
 
-const Catalog = () => {
+const Catalog: React.FC = () => {
   return (
     <section className="catalog">
       <h2>Port's Dog Catalog</h2>
