@@ -1,17 +1,18 @@
-// App.tsx
-import React from 'react';// Import the Catalog component
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Catalog from './components/Catalog';
+import Manage from './components/Manage';
 import Footer from './components/Footer';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <main>
-        <Catalog />
-      </main>
+      <Routes>
+          <Route path="/" element={<Catalog />} /> 
+          <Route path="/manage" element={<Manage />} /> 
+        </Routes>
       <Footer />
     </div>
   );

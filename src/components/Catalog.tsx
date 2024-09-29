@@ -76,7 +76,7 @@ const dogs = [
 ];
   
 
-const Catalog: React.FC = () => {
+const Catalog = () => {
   return (
     <section className="catalog">
       <h2>Port's Dog Catalog</h2>
