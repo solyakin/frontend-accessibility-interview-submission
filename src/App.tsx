@@ -1,20 +1,18 @@
-import React from 'react';
+// App.tsx
+import React from 'react';// Import the Catalog component
 import './App.css';
 import Header from './components/Header';
+import Catalog from './components/Catalog';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <section>
-          <h2>Welcome to The Dog Catalog!</h2>
-          <p>Discover various dog breeds and learn more about them.</p>
-        </section>
+        <Catalog />
       </main>
-      <footer className="App-footer">
-        <p>&copy; {new Date().getFullYear()} The Dog Catalog. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

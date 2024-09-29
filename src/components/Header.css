@@ -1,38 +1,41 @@
+/* Header.css */
 .App-header {
     display: flex;
     align-items: center;
-    padding: 1rem;
-  }
-  
-  .logo {
-    margin-right: auto; /* Pushes the nav to the center */
+    justify-content: space-between;
+    padding: 16px; /* Adjust the padding as needed */
+    background-color: #ffebcc; /* Change the background color for distinction */
+    border-bottom: 2px solid #ffa500; /* Add a bottom border for separation */
   }
   
   .logo img {
-    height: 50px; /* Adjust size as needed */
+    height: 20px; /* Set logo height to 20px */
   }
   
   .nav-container {
-    flex: 1; /* Allows nav to take up available space */
-    text-align: center; /* Centers the navigation */
+    flex-grow: 1; /* Allow nav to grow */
+    text-align: center; /* Center the text */
   }
   
-  nav ul {
-    display: flex;
-    justify-content: center; /* Centers nav items */
-    list-style: none;
-    padding: 0;
+  .nav-container ul {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
   }
   
-  nav li {
-    margin: 0 15px;
+  .nav-container li {
+    margin: 0 16px; /* Add horizontal space between items */
   }
   
-  nav a {
-    text-decoration: none;
+  .nav-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: #1a202c; /* Set link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
   }
   
-  nav a:hover {
-    text-decoration: underline;
+  .nav-container a:hover {
+    color: #3182ce; /* Change link color on hover */
   }
   
