@@ -9,7 +9,7 @@ const About: React.FC = () => {
         This website is an accessibility exercise designed to demonstrate the importance of accessibility in web development. 
         It showcases various features that can be implemented to enhance user experience for individuals with disabilities.
       </p>
-      <h2>Helpful Resources</h2>
+      <h1>Helpful Resources</h1>
       
       {/* Making this list inaccessible */}
       <div>
