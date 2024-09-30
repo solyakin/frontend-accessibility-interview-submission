@@ -34,33 +34,36 @@ const Manage = () => {
   return (
     <div className="manage-container">
       <h2>Add a New Dog</h2>
+      <main>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" value={dogData.name} onChange={handleChange} required />
+          <label htmlFor="name">Name: </label>
+          <input id="name" type="text" name="name" value={dogData.name} onChange={handleChange} required placeholder='Charlie' />
         </div>
         <div className="form-group">
-          <label htmlFor="age">Age:</label>
-          <input type="number" name="age" value={dogData.age} onChange={handleChange} required />
+          <input id="age" type="number" name="age" value={dogData.age} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="height">Height:</label>
-          <input type="text" name="height" value={dogData.height} onChange={handleChange} required />
+          <input id="height" type="text" name="height" value={dogData.height} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="color">Color:</label>
-          <input type="text" name="color" value={dogData.color} onChange={handleChange} required />
+          <input id="color" type="text" name="color" value={dogData.color} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="favoritePortFeature">Favorite Port Feature:</label>
-          <input type="text" name="favoritePortFeature" value={dogData.favoritePortFeature} onChange={handleChange} required />
+          <input id="favoriteToy" type="text" name="favoriteToy" value={dogData.favoritePortFeature} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="favoriteMeal">Favorite Meal:</label>
-          <input type="text" name="favoriteMeal" value={dogData.favoriteMeal} onChange={handleChange} required />
+          <input id="favoriteMeal" type="text" name="favoriteMeal" value={dogData.favoriteMeal} onChange={handleChange} required />
         </div>
         <button type="submit" className="submit-button">Add Dog</button>
       </form>
+      </main>
+      <div className="dogs-form-image" tabIndex={0}>
+        <img 
+          src={`https://placedog.net/1000/300/random?id=128`}
+          alt="Random Dog"
+        />
+      </div>
     </div>
   );
 };

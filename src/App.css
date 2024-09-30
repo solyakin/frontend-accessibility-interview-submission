@@ -3,6 +3,10 @@ html, body {
   margin: 0; /* Remove default margins */
 }
 
+main {
+  flex: 1;
+}
+
 .App {
   display: flex;
   flex-direction: column; /* Arrange children in a column */

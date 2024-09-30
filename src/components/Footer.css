@@ -2,6 +2,6 @@
     text-align: center; /* Center the text */
     padding: 16px; /* Add some padding */
     background-color: #fff; /* Change background color if desired */
-    border-top: 1px solid #ccc; /* Optional: Add a top border */
+    border-top: 1px solid hsl(0, 0%, 80%); /* Optional: Add a top border */
   }
   

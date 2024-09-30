@@ -19,23 +19,21 @@
 }
 
 h3 {
-    font-size: 1.5rem; /* Slightly larger font for the dog's name */
-    color: #333; /* Darker text color */
-    margin: 12px 0; /* Space above and below the name */
+    font-size: 24px; 
+    color: #333; 
+    margin: 12px 0; 
 }
 
-/* Style for each category and value */
 .category {
-    display: flex; /* Use flexbox for alignment */
-    margin: 8px 0;
-    white-space: "nowrap"; /* Prevent wrapping */
+    display: flex; 
+    white-space: "nowrap"; 
 }
 
 .category-label,
 .category-value {
-    font-weight: bold; /* Make the label bold */
-    color: #333; /* Darker text color for labels */
-    white-space: nowrap; /* Prevent text from breaking onto a new line */
+    font-weight: bold; 
+    color: #333; 
+    white-space: nowrap; 
 }
 
 .category-value {
@@ -43,3 +41,19 @@ h3 {
     font-weight: normal;
     color: #555; 
 }
+
+.dog-name-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #72b6fd;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+  }
+  
+  .dog-name-button:hover {
+    background-color: #bdd6f0;
+  }

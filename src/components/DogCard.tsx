@@ -20,11 +20,16 @@ const DogCard: React.FC<DogCardProps> = ({
     favoritePortFeature, 
     favoriteMeal 
 }) => {
+
+  // Function to handle the alert
+  const showAlert = () => {
+    alert(`Dog's name is ${name}`);
+  };
+
   return (
     <div className="dog-card" key={id}>
       <img 
-        src={`https://placedog.net/400/400/random?id=${id}`} 
-        alt={name} 
+        src={`https://placedog.net/400/400/random?id=${id}`}
         className="dog-image" 
       />
       <h3>{name}</h3>
@@ -53,6 +58,10 @@ const DogCard: React.FC<DogCardProps> = ({
           <p className="category-label">Favorite Meal:</p>
           <p className="category-value">{favoriteMeal}</p>
         </div>
+      </div>
+
+      <div className="dog-name-button" onClick={showAlert}>
+        Click here to alert the dog's name
       </div>
     </div>
   );

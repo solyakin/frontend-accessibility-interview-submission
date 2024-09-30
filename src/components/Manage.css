@@ -47,3 +47,14 @@ input {
 .submit-button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+
+.dogs-form-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dogs-form-image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
