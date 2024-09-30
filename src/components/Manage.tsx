@@ -41,19 +41,24 @@ const Manage = () => {
           <input id="name" type="text" name="name" value={dogData.name} onChange={handleChange} required placeholder='Charlie' />
         </div>
         <div className="form-group">
-          <input id="age" type="number" name="age" value={dogData.age} onChange={handleChange} required />
+          Age: 
+          <input type="number" value={dogData.age} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input id="height" type="text" name="height" value={dogData.height} onChange={handleChange} required />
+        height:
+          <input type="text" value={dogData.height} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input id="color" type="text" name="color" value={dogData.color} onChange={handleChange} required />
+        color:
+          <input type="text" value={dogData.color} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input id="favoriteToy" type="text" name="favoriteToy" value={dogData.favoritePortFeature} onChange={handleChange} required />
+        favoriteToy:
+          <input type="text" value={dogData.favoritePortFeature} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <input id="favoriteMeal" type="text" name="favoriteMeal" value={dogData.favoriteMeal} onChange={handleChange} required />
+        favoriteMeal: 
+          <input type="text" value={dogData.favoriteMeal} onChange={handleChange} required />
         </div>
         <button type="submit" className="submit-button">Add Dog</button>
       </form>
