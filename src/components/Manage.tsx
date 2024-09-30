@@ -60,7 +60,7 @@ const Manage = () => {
         favoriteMeal: 
           <input type="text" value={dogData.favoriteMeal} onChange={handleChange} required />
         </div>
-        <button type="submit" className="submit-button">Add Dog</button>
+        <button type="submit" className="submit-button" onClick={() => alert(`Dog name: ${dogData.name} was added successfully!`)}>Add Dog</button>
       </form>
       </main>
       <div className="dogs-form-image" tabIndex={0}>
