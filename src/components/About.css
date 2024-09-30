@@ -33,3 +33,34 @@
     color: green;
     cursor: pointer;
   }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .custom-button {
+    background-color: #007bff; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  /* Hover effect */
+  .custom-button:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+  }
+  
+  /* Focus outline for accessibility */
+  .custom-button:focus {
+    outline: 3px solid #80bdff; /* Light blue outline */
+    outline-offset: 2px; /* Offset to separate from button */
+  }
+  

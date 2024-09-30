@@ -2,6 +2,10 @@ import React from 'react';
 import './About.css'; // Import the CSS for styling
 
 const About: React.FC = () => {
+    const handleClick = () => {
+        alert('Thanks! Your feedback is important to us.');
+      };
+
   return (
     <div className="about-container">
       <h1>About This Website</h1>
@@ -31,6 +35,11 @@ const About: React.FC = () => {
             Landmark Chrome Extension
           </span>
           : Chrome extension to navigate through landmarks.
+        </div>
+      </div>
+      <div className="button-container">
+        <div className="custom-button" onClick={handleClick}>
+            Was this page helpful? Click here to let us know!
         </div>
       </div>
     </div>
