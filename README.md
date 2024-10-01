@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Dog Catalog Accessibility Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project is a front-end-only React application where you can manage a catalog of dogs. The application includes the following pages:
 
-In the project directory, you can run:
+1. **Catalog Page**: Displays cards with dogs. Each card contains the dog’s name and picture.
+2. **Manage Page**: Allows you to add new dogs to the catalog.
+3. **About Page**: Contains useful links for this exercise.
 
-### `npm start`
+## Instructions for Building and Running the Application`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Install dependencies**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+2. **Run the application**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+3. The app should now be running on [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Accessibility Points to Fix
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following are the accessibility issues you need to fix. Each issue is categorized by page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### **About Page (`About.tsx`)**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Category: Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Change the links from `<span>` to `<a>` with the attributes `target="_blank"` and `rel="noopener noreferrer"`.
+2. Update the link text to be more indicative and less ambiguous.
+3. Add an underline to the links to improve visual distinction.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Category: Lists
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Change the list of links to use `<ul>` and `<li>` elements without the default design (bullets).
 
-## Learn More
+#### Category: Headings
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. There are two `<h1>` elements. Change one of them to `<h2>` (choose the correct one).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Category: ARIA
 
-### Code Splitting
+1. On the button, add:
+   - `tabIndex="0"`
+   - `aria-label="Click this button to send feedback"`
+   - `aria-role="button"`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Add a comment in the code above the button explaining how we should handle this without using ARIA attributes.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Catalog Page (`Catalog.tsx`)**
 
-### Making a Progressive Web App
+#### Category: Alternative Text
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Add an `alt` attribute to each dog's picture. The `alt` text should display the dog’s name.
+2. Add an empty `alt` attribute to the website’s logo since it is decorative.
 
-### Advanced Configuration
+#### Category: Semantic HTML
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Replace the button that is currently a `<div>` with a proper `<button>` element.
 
-### Deployment
+#### Category: Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Ensure the button on each dog card has a contrast ratio of at least 4.5:1 (including hover state).
+You can use a contrast checker available on the About Page.
 
-### `npm run build` fails to minify
+#### Category: Heading
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Change the main title of the page from `<h3>` to `<h1>`.
+2. In each DogCard, change the dog's name from an `<h3>` to an `<h2>`.
+
+---
+
+### **Manage Page (`Manage.tsx`)**
+
+#### **Category: Forms**
+
+1. Add a `<label>` element for each input in the form.
+2. Ensure that each input has:
+   - `id`
+   - `name`
+   - `placeholder` (you can refer to the `name` input as an example).
+   - Add the corresponding `htmlFor` attribute to each `<label>`.
+
+#### **Category: Alternative Text**
+
+1. The picture below the form should not be reachable. Remove its `tabIndex` and `alt` attribute, as it is purely decorative.
+
+#### **Category: Headings**
+
+1. Change the page's title from `<h2>` to `<h1>`. Adjust the text size via CSS to avoid any visual changes.
+
+---
+
+### **General Navigation Changes**
+
+#### **Category: Navigation**
+
+1. The website contains two `<nav>` and two `<main>` sections. Remove one of each to follow proper semantic structure.
+
+---
+
+### **Font Size**
+
+#### **Category: Font Size**
+
+1. Change all font sizes across the website to use `rem` units instead of `px`. This will ensure accessibility for users who adjust text sizes in their browser.
+
+---
+
+Thank you for completing this exercise! The links on the About Page should assist you with contrast checking, accessibility testing, and more.
+
+---
+
+Let me know if you need to update or adjust anything!
