@@ -26,6 +26,8 @@ This project is a front-end-only React application where you can manage a catalo
 
 ## Accessibility Guidelines
 
+**The main goal of this exercise is to make the application accessible according to WCAG 2.2 standards.**
+
 The points you need to fix in this exercise relate to **Links**, **Lists**, **Headings**, **ARIA**, **Alternative Text**, **Colors**, **Forms**, **Navigation**, and **Font Size**.
 
 You can use the following useful links to help guide your fixes:
