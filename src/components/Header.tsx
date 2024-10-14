@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for routing
-import PortLogo from '../PortLogo.svg';
+import CatalogLogo from '../CatalogLogo.svg';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <nav>
         <div className="logo">
           <Link to="/">
-            <img src={PortLogo} alt="Port Logo" />
+            <img src={CatalogLogo} alt="Dog's Catalog Logo" />
           </Link>
         </div>
       </nav>

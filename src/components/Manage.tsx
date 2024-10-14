@@ -5,10 +5,9 @@ const Manage = () => {
   const [dogData, setDogData] = useState({
     name: '',
     age: '',
-    picture: '',
     height: '',
     color: '',
-    favoritePortFeature: '',
+    favoriteToy: '',
     favoriteMeal: '',
   });
 
@@ -23,10 +22,9 @@ const Manage = () => {
     setDogData({
       name: '',
       age: '',
-      picture: '',
       height: '',
       color: '',
-      favoritePortFeature: '',
+      favoriteToy: '',
       favoriteMeal: '',
     });
   };
@@ -42,23 +40,23 @@ const Manage = () => {
         </div>
         <div className="form-group">
           Age: 
-          <input type="number" value={dogData.age} onChange={handleChange} required />
+          <input type="number" name="age" value={dogData.age} onChange={handleChange} required />
         </div>
         <div className="form-group">
         height:
-          <input type="text" value={dogData.height} onChange={handleChange} required />
+          <input type="text" name="height" value={dogData.height} onChange={handleChange} required />
         </div>
         <div className="form-group">
         color:
-          <input type="text" value={dogData.color} onChange={handleChange} required />
+          <input type="text" name="color" value={dogData.color} onChange={handleChange} required />
         </div>
         <div className="form-group">
         favoriteToy:
-          <input type="text" value={dogData.favoritePortFeature} onChange={handleChange} required />
+          <input type="text" name="favoriteToy" value={dogData.favoriteToy} onChange={handleChange} required />
         </div>
         <div className="form-group">
         favoriteMeal: 
-          <input type="text" value={dogData.favoriteMeal} onChange={handleChange} required />
+          <input type="text" name="favoriteMeal" value={dogData.favoriteMeal} onChange={handleChange} required />
         </div>
         <button type="submit" className="submit-button" onClick={() => alert(`Dog name: ${dogData.name} was added successfully!`)}>Add Dog</button>
       </form>
