@@ -52,6 +52,7 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     user-select: none;
+    border: none;
   }
   
   .dog-name-button:hover {
