@@ -31,32 +31,88 @@ const Manage = () => {
 
   return (
     <section className="manage-container">
-      <h2>Add a New Dog</h2>
+      <h1>Add a New Dog</h1>
       <main>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
-          <label htmlFor="name">Name: </label>
-          <input id="name" type="text" name="name" value={dogData.name} onChange={handleChange} required placeholder='Charlie' />
+          <label htmlFor="name">Name: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          id="name" 
+          type="text" 
+          name="name" 
+          value={dogData.name} 
+          onChange={handleChange} 
+          required 
+          placeholder='Charlie' 
+          aria-required="true" 
+          aria-label='Name'
+          aria-describedby="name-hint" 
+          />
         </div>
         <div className="form-group">
-          Age: 
-          <input type="number" name="age" value={dogData.age} onChange={handleChange} required />
+          <label htmlFor="age">Age: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          type="number"
+          name="age"
+          value={dogData.age} 
+          onChange={handleChange} 
+          required 
+          aria-required="true" 
+          aria-label='Age'
+          aria-describedby="age-hint" 
+           />
         </div>
         <div className="form-group">
-        height:
-          <input type="text" name="height" value={dogData.height} onChange={handleChange} required />
+          <label htmlFor="height">Height: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          type="text" 
+          name="height" 
+          value={dogData.height} 
+          onChange={handleChange} 
+          required 
+          aria-label='Height'
+          aria-required="true" 
+          aria-describedby="height-hint" 
+          />
         </div>
         <div className="form-group">
-        color:
-          <input type="text" name="color" value={dogData.color} onChange={handleChange} required />
+          <label htmlFor="height">Color: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          type="text" 
+          name="color" 
+          value={dogData.color} 
+          onChange={handleChange} 
+          required 
+          aria-label='Color'
+          aria-required="true" 
+          aria-describedby="height-hint" 
+          />
         </div>
         <div className="form-group">
-        favoriteToy:
-          <input type="text" name="favoriteToy" value={dogData.favoriteToy} onChange={handleChange} required />
+          <label htmlFor="favoriteToy">FavoriteToy: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          type="text" 
+          name="favoriteToy" 
+          value={dogData.favoriteToy} 
+          onChange={handleChange} 
+          required 
+          aria-label='Favorite Toy'
+          aria-required="true" 
+          aria-describedby="height-hint" 
+          />
         </div>
         <div className="form-group">
-        favoriteMeal: 
-          <input type="text" name="favoriteMeal" value={dogData.favoriteMeal} onChange={handleChange} required />
+          <label htmlFor="favoriteMeal">FavoriteMeal: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <input 
+          type="text" 
+          name="favoriteMeal" 
+          value={dogData.favoriteMeal}
+          onChange={handleChange} 
+          required 
+          aria-label='Favorite Meal'
+          aria-required="true" 
+          aria-describedby="height-hint" 
+          />
         </div>
         <button type="submit" className="submit-button" onClick={() => alert(`Dog name: ${dogData.name} was added successfully!`)}>Add Dog</button>
       </form>
