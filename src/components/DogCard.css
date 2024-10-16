@@ -18,8 +18,8 @@
     border-radius: 12px; /* Match card's corners */
 }
 
-h3 {
-    font-size: 24px; 
+h2 {
+    font-size: 1.2rem; 
     color: #333; 
     margin: 12px 0; 
 }
