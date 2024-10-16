@@ -19,22 +19,44 @@ const About: React.FC = () => {
       <div>
         <div>
           {/* Non-clickable text, looks like plain text instead of a link */}
-          <span className="link-text" onClick={() => window.open("https://webaim.org/resources/contrastchecker/", "_blank")}>
+          <a
+            href="https://webaim.org/resources/contrastchecker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-text"
+            aria-label="Open a new tab to check color contracts"
+          >
             Link 1
-          </span>
+          </a>
+          <span>
           : Check color contrasts to ensure they meet the AA grade (should be at least 4.5).
+          </span>
         </div>
         <div>
-          <span className="link-text" onClick={() => window.open("https://htmlcolorcodes.com/", "_blank")}>
-          Link 2
-          </span>
-          : A tool to help you pick hex colors.
+          <a
+            href="https://htmlcolorcodes.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-text"
+            aria-label="Open a new tab to the HTML Color Codes tool"
+          >
+            Link 2
+          </a>
+          <span>: A tool to help you pick hex colors.</span>
         </div>
         <div>
-          <span className="link-text" onClick={() => window.open("https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp", "_blank")}>
-          Link 3
-          </span>
+          <a
+            href="https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-text"
+            aria-label="Open a new tab to chrome extention to navigate landmarks"
+          >
+            Link 3
+          </a>
+          <span>
           : Chrome extension to navigate through landmarks.
+          </span>
         </div>
       </div>
       <div className="button-container">
