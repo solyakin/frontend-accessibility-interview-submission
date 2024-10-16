@@ -33,32 +33,32 @@ const DogCard: React.FC<DogCardProps> = ({
         className="dog-image" 
       />
       <h3>{name}</h3>
-      <div>
+      <dl>
         <div className="category">
-          <p className="category-label">ID:</p>
-          <p className="category-value">{id}</p>
+          <dt className="category-label">ID:</dt>
+          <dd className="category-value">{id}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Age:</p>
-          <p className="category-value">{age} years</p>
+          <dt className="category-label">Age:</dt>
+          <dd className="category-value">{age} years</dd>
         </div>
         <div className="category">
-          <p className="category-label">Height:</p>
-          <p className="category-value">{height}</p>
+          <dt className="category-label">Height:</dt>
+          <dd className="category-value">{height}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Color:</p>
-          <p className="category-value">{color}</p>
+          <dt className="category-label">Color:</dt>
+          <dd className="category-value">{color}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Favorite Feature:</p>
-          <p className="category-value">{favoritePortFeature}</p>
+          <dt className="category-label">Favorite Feature:</dt>
+          <dd className="category-value">{favoritePortFeature}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Favorite Meal:</p>
-          <p className="category-value">{favoriteMeal}</p>
+          <dt className="category-label">Favorite Meal:</dt>
+          <dd className="category-value">{favoriteMeal}</dd>
         </div>
-      </div>
+      </dl>
 
       <div className="dog-name-button" onClick={showAlert}>
         Click here to alert the dog's name
