@@ -30,7 +30,7 @@ const Manage = () => {
   };
 
   return (
-    <div className="manage-container">
+    <section className="manage-container">
       <h2>Add a New Dog</h2>
       <main>
       <form onSubmit={handleSubmit} className="dog-form">
@@ -67,7 +67,7 @@ const Manage = () => {
           alt="Random Dog"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
