@@ -19,6 +19,7 @@ const Manage = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('New Dog Added:', dogData);
+    alert(`Dog name: ${dogData.name} was added successfully!`)
     setDogData({
       name: '',
       age: '',
@@ -114,7 +115,7 @@ const Manage = () => {
           aria-describedby="height-hint" 
           />
         </div>
-        <button type="submit" className="submit-button" onClick={() => alert(`Dog name: ${dogData.name} was added successfully!`)}>Add Dog</button>
+        <button type="submit" className="submit-button">Add Dog</button>
       </form>
       </main>
       <div className="dogs-form-image" tabIndex={0}>
