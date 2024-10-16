@@ -27,6 +27,7 @@ h2 {
 .category {
     display: flex; 
     white-space: "nowrap"; 
+    margin-bottom: 12px;
 }
 
 .category-label,
