@@ -2,9 +2,9 @@ import React from 'react';
 import './About.css'; // Import the CSS for styling
 
 const About: React.FC = () => {
-    const handleClick = () => {
-        alert('Thanks! Your feedback is important to us.');
-      };
+  const handleClick = () => {
+    alert('Thanks! Your feedback is important to us.');
+  };
 
   return (
     <section className="about-container">
@@ -60,9 +60,9 @@ const About: React.FC = () => {
         </div>
       </div>
       <div className="button-container">
-        <div className="custom-button" onClick={handleClick}>
-            Was this page helpful? Click here to let us know!
-        </div>
+        <button type='button' className="custom-button" onClick={handleClick}>
+          Was this page helpful? Click here to let us know!
+        </button>
       </div>
     </section>
   );
