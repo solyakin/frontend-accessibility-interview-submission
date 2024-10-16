@@ -33,7 +33,6 @@ const Manage = () => {
   return (
     <section className="manage-container">
       <h1>Add a New Dog</h1>
-      <main>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
           <label htmlFor="name">Name: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
@@ -117,7 +116,6 @@ const Manage = () => {
         </div>
         <button type="submit" className="submit-button">Add Dog</button>
       </form>
-      </main>
       <div className="dogs-form-image" tabIndex={0}>
         <img 
           src={`https://placedog.net/1000/300/random?id=128`}
