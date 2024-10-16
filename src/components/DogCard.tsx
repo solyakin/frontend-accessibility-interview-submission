@@ -31,8 +31,9 @@ const DogCard: React.FC<DogCardProps> = ({
       <img 
         src={`https://placedog.net/400/400/random?id=${id}`}
         className="dog-image" 
+        alt={`photo-of-${name}`}
       />
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <dl>
         <div className="category">
           <dt className="category-label">ID:</dt>
