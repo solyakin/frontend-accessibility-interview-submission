@@ -8,16 +8,40 @@ const Header: React.FC = () => {
     <header className="App-header">
       <nav>
         <div className="logo">
-          <Link to="/">
+          <Link 
+          to="/"
+          aria-label="Go to the home page"
+          >
             <img src={CatalogLogo} alt="Dog's Catalog Logo" />
           </Link>
         </div>
       </nav>
       <nav className="nav-container">
         <ul>
-          <li><Link to="/">Catalog</Link></li>
-          <li><Link to="/manage">Manage</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li>
+            <Link 
+            to="/"
+            aria-label="Go to the catalog page"
+            >
+            Catalog
+            </Link>
+          </li>
+          <li>
+            <Link 
+            to="/manage"
+            aria-label="Go to the manage page"
+            >
+              Manage
+            </Link>
+          </li>
+          <li>
+            <Link 
+            to="/about"
+            aria-label="Go to the about page"
+            >
+              About
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
