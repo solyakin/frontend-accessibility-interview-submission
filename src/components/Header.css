@@ -38,4 +38,8 @@
   .nav-container a:hover {
     color: #3182ce; /* Change link color on hover */
   }
+
+  .nav-container a:focus{
+    color: #3182ce; /* Visible focus indicator */
+  }
   
