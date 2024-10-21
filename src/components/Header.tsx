@@ -6,7 +6,7 @@ import './Header.css';
 const Header: React.FC = () => {
   return (
     <header className="App-header">
-      <nav>
+      <nav aria-label="Main Navigation">
         <div className="logo">
           <Link 
           to="/"
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
       </nav>
-      <nav className="nav-container">
+      <nav aria-label="Link Navigation" className="nav-container">
         <ul>
           <li>
             <Link 
