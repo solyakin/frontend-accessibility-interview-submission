@@ -80,11 +80,11 @@ const Catalog: React.FC = () => {
   return (
     <section className="catalog">
       <h1>Dog's Catalog</h1>
-      <div className="dog-cards-container">
+      <ul className="dog-cards-container" aria-label="List of dog cards">
         {dogs.map((dog, index) => (
           <DogCard key={index} {...dog} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

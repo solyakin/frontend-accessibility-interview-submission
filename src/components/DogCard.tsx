@@ -27,7 +27,7 @@ const DogCard: React.FC<DogCardProps> = ({
   };
 
   return (
-    <div className="dog-card" key={id}>
+    <li className="dog-card" key={id}>
       <img 
         src={`https://placedog.net/400/400/random?id=${id}`}
         className="dog-image" 
@@ -64,7 +64,7 @@ const DogCard: React.FC<DogCardProps> = ({
       <button type='button' className="dog-name-button" onClick={showAlert}>
         Click here to alert the dog's name
       </button>
-    </div>
+    </li>
   );
 };
 

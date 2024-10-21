@@ -9,6 +9,9 @@
     display: grid; /* Use grid layout for cards */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 16px; /* Space between cards */
+    list-style: none; /* Removes the bullet points */
+    padding: 0;       /* Removes any default padding */
+    margin: 0;        /* Removes any default margin */
   }
   
   .dog-card {
