@@ -18,7 +18,6 @@ const Manage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('New Dog Added:', dogData);
     alert(`Dog name: ${dogData.name} was added successfully!`)
     setDogData({
       name: '',
