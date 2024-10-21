@@ -34,7 +34,7 @@ const Manage = () => {
       <h1>Add a New Dog</h1>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
-          <label htmlFor="name">Name: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="name">Name: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           id="name" 
           type="text" 
@@ -49,7 +49,7 @@ const Manage = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="age">Age: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="age">Age: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           type="number"
           name="age"
@@ -62,7 +62,7 @@ const Manage = () => {
            />
         </div>
         <div className="form-group">
-          <label htmlFor="height">Height: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="height">Height: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           type="text" 
           name="height" 
@@ -75,7 +75,7 @@ const Manage = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="height">Color: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="height">Color: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           type="text" 
           name="color" 
@@ -88,7 +88,7 @@ const Manage = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="favoriteToy">FavoriteToy: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="favoriteToy">FavoriteToy: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           type="text" 
           name="favoriteToy" 
@@ -101,7 +101,7 @@ const Manage = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="favoriteMeal">FavoriteMeal: <span aria-hidden="true" style={{ color: 'red' }}>*</span> </label>
+          <label htmlFor="favoriteMeal">FavoriteMeal: <span aria-hidden="true" className='asterisk'>*</span> </label>
           <input 
           type="text" 
           name="favoriteMeal" 
