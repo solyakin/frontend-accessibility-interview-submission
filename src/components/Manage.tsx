@@ -31,7 +31,7 @@ const Manage = () => {
 
   return (
     <section className="manage-container">
-      <h1>Add a New Dog</h1>
+      <h1 className='title'>Add a New Dog</h1>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
           <label htmlFor="name">Name: <span aria-hidden="true" className='asterisk'>*</span> </label>
