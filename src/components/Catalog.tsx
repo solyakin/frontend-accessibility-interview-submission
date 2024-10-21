@@ -79,7 +79,7 @@ const dogs = [
 const Catalog: React.FC = () => {
   return (
     <section className="catalog">
-      <h1>Dog's Catalog</h1>
+      <h1 className='title'>Dog's Catalog</h1>
       <ul className="dog-cards-container" aria-label="List of dog cards">
         {dogs.map((dog, index) => (
           <DogCard key={index} {...dog} />
