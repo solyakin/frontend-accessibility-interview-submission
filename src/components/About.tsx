@@ -16,8 +16,8 @@ const About: React.FC = () => {
       <h2>Helpful Resources</h2>
       
       {/* Making this list inaccessible */}
-      <div>
-        <div>
+      <ul aria-label="List of helpful resouces">
+        <li>
           {/* Non-clickable text, looks like plain text instead of a link */}
           <a
             href="https://webaim.org/resources/contrastchecker/"
@@ -31,8 +31,8 @@ const About: React.FC = () => {
           <span>
           : Check color contrasts to ensure they meet the AA grade (should be at least 4.5).
           </span>
-        </div>
-        <div>
+        </li>
+        <li>
           <a
             href="https://htmlcolorcodes.com/"
             target="_blank"
@@ -43,8 +43,8 @@ const About: React.FC = () => {
             Link 2
           </a>
           <span>: A tool to help you pick hex colors.</span>
-        </div>
-        <div>
+        </li>
+        <li>
           <a
             href="https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp"
             target="_blank"
@@ -57,8 +57,8 @@ const About: React.FC = () => {
           <span>
           : Chrome extension to navigate through landmarks.
           </span>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div className="button-container">
         <button type='button' className="custom-button" onClick={handleClick}>
           Was this page helpful? Click here to let us know!
